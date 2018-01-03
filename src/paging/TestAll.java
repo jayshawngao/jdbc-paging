@@ -16,11 +16,8 @@ public class TestAll {
 	@Test
 	public void test() {
 		ProductDao productDao = new ProductDao();
-		
 		//从页面取得页码  
-		int pageCount = 4;  
-  
-		  
+		int pageCount = 2;  
 		//取得总记录数，创建Page对象  
 		int totalRow = productDao.getProductAmount();//通过select count 取得总记录数  
 		Page page = new Page(totalRow, pageCount);  
